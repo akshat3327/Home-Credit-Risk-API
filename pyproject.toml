@@ -1,0 +1,37 @@
+[tool.poetry]
+
+package-mode = false
+[project]
+
+name = "loan-risk-platform"
+version = "0.1.0"
+description = "Loan Risk Assessment Platform"
+authors = [
+    {name = "akshat3327",email = "akshatjaingenius@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "pandas (>=3.0.3,<4.0.0)",
+    "numpy (>=2.4.6,<3.0.0)",
+    "scikit-learn (>=1.9.0,<2.0.0)",
+    "xgboost (>=3.2.0,<4.0.0)",
+    "fastapi (>=0.137.1,<0.138.0)",
+    "uvicorn (>=0.49.0,<0.50.0)",
+    "sqlalchemy (>=2.0.51,<3.0.0)",
+    "pymysql (>=1.2.0,<2.0.0)",
+    "notebook (>=7.5.7,<8.0.0)",
+    "optuna (>=4.9.0,<5.0.0)",
+    "catboost (>=1.2.10,<2.0.0)",
+    "shap (>=0.52.0,<0.53.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "notebook (>=7.5.7,<8.0.0)"
+]
